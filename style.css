@@ -1,0 +1,13 @@
+/* COLORS */
+:root{
+    --green:#5FD788;
+    --grey: #F3F4F6;
+    --mischka: #9CA3AF;
+    --darker-grey: #4B5563;
+    --midnight: #1F2937;
+}
+
+/* GLOBAL STYLES */
+body{
+    font-family: 'sfpro-display', sans-serif;
+}
