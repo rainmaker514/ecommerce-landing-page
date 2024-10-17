@@ -8,6 +8,67 @@
 }
 
 /* GLOBAL STYLES */
-body{
+*{
+    box-sizing: border-box;
+    margin: 0;
     font-family: 'sfpro-display', sans-serif;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+}
+
+section{
+    margin-top: 100px;
+}
+
+/* NAV SECTION */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1F2937;
+    padding: 20px 0;
+    width: 80%;
+    position: fixed;
+    top: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: #1F2937;
+}
+
+.right-menu{
+    display: flex;
+    gap: 12px;
+}
+
+.right-menu img{
+    cursor: pointer;
 }
