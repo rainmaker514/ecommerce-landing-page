@@ -1,74 +1,97 @@
 /* COLORS */
-:root{
-    --green:#5FD788;
-    --grey: #F3F4F6;
-    --mischka: #9CA3AF;
-    --darker-grey: #4B5563;
-    --midnight: #1F2937;
+:root {
+  --green: #5fd788;
+  --grey: #f3f4f6;
+  --mischka: #9ca3af;
+  --darker-grey: #4b5563;
+  --midnight: #1f2937;
 }
 
 /* GLOBAL STYLES */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'sfpro-display', sans-serif;
-    padding: 0;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-.wrapper{
-    max-width: 80%;
-    margin: 0 auto;
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-.header{
-    height: 100vh;
-    width: 100%;
+.header {
+  height: 100vh;
+  width: 100%;
 }
 
-section{
-    margin-top: 100px;
+section {
+  margin-top: 100px;
 }
 
 /* NAV SECTION */
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 600;
-    color: #1F2937;
-    padding: 20px 0;
-    width: 80%;
-    position: fixed;
-    top: 0;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1f2937;
+  padding: 20px 0;
+  width: 80%;
+  position: fixed;
+  top: 0;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    cursor: pointer;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
 }
 
-.navbar{
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.navbar {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-link{
-    text-decoration: none;
-    color: #1F2937;
+.navbar-link {
+  text-decoration: none;
+  color: #1f2937;
 }
 
-.right-menu{
-    display: flex;
-    gap: 12px;
+.right-menu {
+  display: flex;
+  gap: 12px;
 }
 
-.right-menu img{
-    cursor: pointer;
+.right-menu img {
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-left {
+  margin-left: 100px;
+}
+
+.hero-left h1 {
+  font-size: 96px;
+  color: var(--green);
+  padding-bottom: 30px;
+}
+
+.hero-left p {
+  color: var(--mischka);
 }
