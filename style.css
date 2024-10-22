@@ -2,6 +2,7 @@
 :root {
   --green: #5fd788;
   --grey: #f3f4f6;
+  --grey500: #6b7280;
   --mischka: #9ca3af;
   --darker-grey: #4b5563;
   --midnight: #1f2937;
@@ -38,7 +39,7 @@ section {
   border-radius: 8px;
   transition: all 0.3s ease;
   cursor: pointer;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .btn:hover {
@@ -186,4 +187,114 @@ nav {
   padding-bottom: 30px;
 }
 
+/* BESTSELLERS SECTION */
+.bestsellers-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 100vh; */
+  width: 100%;
+  /* gap: 200px; */
+}
 
+.flower1 {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.bestsellers-left {
+  margin: 0 0 100px 100px;
+}
+
+.bestsellers-left h1 {
+  font-size: 50px;
+  color: var(--green);
+  padding-bottom: 30px;
+}
+
+.product-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  /* width: 100%; */
+  margin-right: 60px;
+  transform: translateY(-100px);
+}
+
+.product-card:first-child {
+  background: url(https://res.cloudinary.com/dok4izhx6/image/upload/f_auto/v1728695163/diffuser1_fpxkbc.png);
+  background-size: cover;
+  height: 390px;
+}
+
+.product-card:last-child {
+  background: url(https://res.cloudinary.com/dok4izhx6/image/upload/f_auto/v1728695163/diffuser2_ohvpss.png);
+  background-size: cover;
+  height: 390px;
+}
+
+.product-card-info {
+  width: 375px;
+  position: relative;
+  top: 290px;
+  background: rgba(255, 255, 255, 0.6);
+  /* backdrop-filter: blur(7.5px); */
+  border-radius: 0 0 8px 8px;
+  padding: 20px 20px;
+}
+
+.product-card-info p {
+  font-size: 12px;
+  color: var(--midnight);
+}
+
+.product-card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-card-title h4 {
+  font-size: 20px;
+}
+
+.product-card-title p {
+  font-size: 10px;
+  color: #fff;
+  background-color: var(--green);
+  padding: 3px 8px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.product-card-description {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.product-card-description img {
+  cursor: pointer;
+  transform: translateY(-20px);
+}
+
+.slider{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50px);
+}
+
+.dot{
+  background-color: var(--mischka);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.dot:first-child{
+  background-color: var(--green);
+}
