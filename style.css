@@ -333,3 +333,41 @@ nav {
   background-color: #fff;
   color: var(--midnight);
 }
+
+/* TRENDS SECTION */
+.trends-section{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.flower2{
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.trends-left{
+  margin: 0 0 100px 100px;
+}
+
+.trends-left h1{
+  font-size: 50px;
+  color: var(--green);
+  padding-bottom: 30px;
+  margin-top: 190px;
+}
+
+.trends-right{
+  margin-top: 100px;
+}
+
+.trends-right .product-card:first-child{
+  background: url(https://res.cloudinary.com/dok4izhx6/image/upload/f_auto/v1728696565/basket_j17pul.png);
+}
+
+.trends-right .product-card:last-child{
+  background: url(https://res.cloudinary.com/dok4izhx6/image/upload/f_auto/v1728952184/soap-bar_tx8wie.png);
+}
+
+
