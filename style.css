@@ -284,7 +284,7 @@ nav {
   transform: translateY(-20px);
 }
 
-.slider{
+.slider {
   display: flex;
   gap: 5px;
   align-items: center;
@@ -292,33 +292,33 @@ nav {
   transform: translateY(-50px);
 }
 
-.dot{
+.dot {
   background-color: var(--mischka);
   height: 10px;
   width: 10px;
   border-radius: 50%;
 }
 
-.dot:first-child{
+.dot:first-child {
   background-color: var(--green);
 }
 
 /* SOAPS SECTION */
-.soaps-section{
+.soaps-section {
   display: flex;
   width: 100%;
   height: 515px;
   /* align-items: center; */
 }
 
-.soaps-left{
+.soaps-left {
   background: url(https://res.cloudinary.com/dok4izhx6/image/upload/f_auto/v1728946770/textured-bg_mdmqdz.png);
   background-size: cover;
   height: 100%;
   text-align: center;
 }
 
-.soaps-left h1{
+.soaps-left h1 {
   /* position: relative; */
   /* top: -400px; */
   z-index: 1;
@@ -329,45 +329,91 @@ nav {
   text-align: left;
 }
 
-.soaps-left .btn{
+.soaps-left .btn {
   background-color: #fff;
   color: var(--midnight);
 }
 
 /* TRENDS SECTION */
-.trends-section{
+.trends-section {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.flower2{
+.flower2 {
   position: absolute;
   left: 0;
   z-index: -1;
 }
 
-.trends-left{
+.trends-left {
   margin: 0 0 100px 100px;
 }
 
-.trends-left h1{
+.trends-left h1 {
   font-size: 50px;
   color: var(--green);
   padding-bottom: 30px;
   margin-top: 190px;
 }
 
-.trends-right{
+.trends-right {
   margin-top: 100px;
 }
 
-.trends-right .product-card:first-child{
+.trends-right .product-card:first-child {
   background: url(https://res.cloudinary.com/dok4izhx6/image/upload/f_auto/v1728696565/basket_j17pul.png);
 }
 
-.trends-right .product-card:last-child{
+.trends-right .product-card:last-child {
   background: url(https://res.cloudinary.com/dok4izhx6/image/upload/f_auto/v1728952184/soap-bar_tx8wie.png);
 }
 
+/* BLOG SECTION */
 
+.blog-section {
+  margin-bottom: 70px;
+}
+
+.blog-section h1 {
+  text-align: center;
+  font-size: 50px;
+  color: var(--green);
+  padding-bottom: 30px;
+}
+
+.blog-post-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0 140px 70px;
+}
+
+.blog-post {
+  width: 370px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+  border-radius: 8px 0 0;
+}
+
+.blog-post-title {
+  color: var(--green);
+  font-size: 20px;
+  padding: 22px 23px 11px;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--mischka);
+  margin: 0 22px 22px;
+}
+
+.blog-post-description {
+  font-size: 16px;
+  color: var(--darker-grey);
+  padding: 0 22px 22px;
+}
