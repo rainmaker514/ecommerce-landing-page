@@ -3,7 +3,7 @@
   --green: #5fd788;
   --grey: #f3f4f6;
   --grey500: #6b7280;
-  --mischka: #9ca3af;
+  --grey400: #9ca3af;
   --darker-grey: #4b5563;
   --midnight: #1f2937;
 }
@@ -19,6 +19,12 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
+  color: var(--grey400);
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--green);
 }
 
 .header {
@@ -152,19 +158,19 @@ nav.scrolled {
 
 /* HERO SECTION */
 .hero-section{
-  padding-top: 60px;
+  padding: 100px 0;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   padding-inline: 8vw;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   flex-direction: column-reverse;
 }
 
 .hero-right{
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
 }
 
@@ -172,17 +178,39 @@ nav.scrolled {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: auto;
-}
-
-.hero-right img:nth-child(2){
+  /* width: 100%; */
+  /* height: auto; */
   z-index: -1;
 }
 
+.hero-right img:nth-child(2){
+  z-index: -2;
+}
+
 .hero-left{ 
-  width : 100%; 
+  /* width : 100%;  */
   margin-top: 300px;
+}
+
+.hero-left h1{
+  font-size: 40px;
+  color: var(--green);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* ABOUT SECTION */
+.about-section{
+  width: 100%;
+}
+
+.about-card-container{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column; */
+  text-align: center;
 }
 
 
