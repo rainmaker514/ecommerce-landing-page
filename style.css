@@ -26,6 +26,11 @@ body {
   color: var(--grey400);
 }
 
+section {
+  margin-top: 6rem;
+}
+
+
 h1 {
   font-size: 2rem;
   color: var(--green);
@@ -184,8 +189,9 @@ nav.scrolled {
 
 /* HERO SECTION */
 .hero-section{
-  padding: 100px 0;
+  padding-top: 100px;
   display: flex;
+  margin: 0;
   /* justify-content: center; */
   align-items: center;
   padding-inline: 8vw;
@@ -198,24 +204,29 @@ nav.scrolled {
   position: relative;
   /* width: 100%; */
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.hero-right img{
+.hero-right .hero-bottles{
   position: absolute;
-  top: 0;
-  left: 0;
-  /* width: 100%; */
-  /* height: auto; */
-  z-index: -1;
+  
+  width: 140px;
+  height: auto;
+  z-index: 0;
 }
 
-.hero-right img:nth-child(2){
-  z-index: -2;
+.hero-right .hero-blob{
+  z-index: -1;
+  width: 226.53px;
+  height: auto;
 }
 
 .hero-left{ 
   /* width : 100%;  */
-  margin-top: 300px;
+  margin-top: 2.4rem;
 }
 
 .hero-left h1{
@@ -298,16 +309,16 @@ nav.scrolled {
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
-.explore-left .incense{
-  width: 155px;
-  height: 137px;
+.explore-left .explore-incense{
+  width: 155.27px;
+  height: 137.38px;
   position: absolute;
 }
 
-.explore-left .incense-blob{
+.explore-left .explore-blob{
   width: 190px;
 }
 
@@ -326,6 +337,12 @@ nav.scrolled {
   padding-bottom: 2rem;
 }
 
-
+/* BESTSELLERS SECTION */
+.bestsellers-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
