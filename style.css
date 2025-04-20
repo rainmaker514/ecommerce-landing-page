@@ -6,7 +6,7 @@
   --grey400: #9ca3af;
   --grey50: #F9FAFB;
   --darker-grey: #4b5563;
-  --midnight: #1f2937;
+  --grey800: #1F2937;
 }
 
 /* GLOBAL STYLES */
@@ -55,7 +55,7 @@ h1 {
 }
 
 .btn:hover {
-  color: var(--midnight);
+  color: var(--grey800);
   background-color: #fff;
 }
 
@@ -69,6 +69,7 @@ h1 {
   width: 100%;
   top: 0;
   transition: all 400ms ease;
+  z-index: 1;
 }
 
 nav.scrolled {
@@ -343,6 +344,75 @@ nav.scrolled {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
+.bestsellers-flower{
+  width: 229px;
+  height: auto;
+  padding-bottom: 3rem;
+}
 
+.bestsellers-left{
+  position: absolute;
+  top: 100px;
+  text-align: center;
+}
+
+.bestsellers-left h1{
+  font-size: 3.6rem;
+  padding-bottom: 2.9rem;
+}
+
+.product-card{
+  text-align: center;
+}
+
+.product-card-info{
+  text-align: left;
+}
+
+.bestsellers-right img{
+  width: 298px;
+  height: 310px;
+}
+
+.product-card-info{
+  background: rgba(255, 255, 255, 0.6);
+  /* backdrop-filter: blur(7.5px); */
+  border-radius: 0 20px;
+  padding: 1rem 3rem;
+  position: relative;
+  top: -77px;
+  width: 100%;
+  height: 72px;
+}
+
+.product-card-title {
+  display: flex;
+  align-items: center;
+  
+ 
+}
+
+.product-card h4{
+  font-size: 1.5rem;
+  color: var(--grey800);
+  width: fit-content;
+  padding-right: 1rem;
+}
+
+.product-card-title p{
+  color: #fff;
+  background-color: var(--green);
+  padding: 0.3rem 0.8rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.product-card-description{
+  font-size: 1.1rem;
+  color: var(--grey500);
+}
