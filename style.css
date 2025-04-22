@@ -416,3 +416,32 @@ nav.scrolled {
   font-size: 1.1rem;
   color: var(--grey500);
 }
+
+/* SOAPS SECTION */
+.soaps-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  height: 60vh;
+}
+
+.soaps-left h1{
+  font-size: 3.2rem;
+  color: white;
+  font-weight: 500;
+}
+
+.soaps-right{
+ 
+}
+
+.soaps{
+  width: 376px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
