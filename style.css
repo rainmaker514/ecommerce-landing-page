@@ -364,8 +364,16 @@ nav.scrolled {
   padding-bottom: 2.9rem;
 }
 
+.product-card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .product-card{
   text-align: center;
+  width: 300px;
 }
 
 .product-card-info{
@@ -391,8 +399,6 @@ nav.scrolled {
 .product-card-title {
   display: flex;
   align-items: center;
-  
- 
 }
 
 .product-card h4{
@@ -444,4 +450,34 @@ nav.scrolled {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+/* TRENDS SECTION */
+.trends-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.trends-flower{
+  width: 260px;
+  height: auto;
+  padding-top: 30px;
+  position: absolute;
+  left: 20%;
+  z-index: -1;
+  top: 0;
+}
+
+.trends-left{
+  padding-top: 15rem;
+  padding: 15rem 0 15.7rem;
+}
+
+.trends-left h1{
+  font-size: 3.6rem;
+  padding-bottom: 3.2rem;
 }
