@@ -14,8 +14,10 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0; 
+  /* outline: 1px solid red; */
 }
+
 html{
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -95,6 +97,7 @@ nav.scrolled {
 
 .logo p {
   font-size: 1.2rem;
+  color: var(--grey800);
 }
 
 .mobile-nav-menu-icon{
@@ -126,6 +129,10 @@ nav.scrolled {
 .mobile-nav-menu-container.active .close-icon {
   opacity: 1;
   pointer-events: auto;
+}
+
+.right-menu {
+  display: none;
 }
 
 .sub-menu {
@@ -445,8 +452,10 @@ nav.scrolled {
 }
 
 .soaps{
-  width: 376px;
+  max-width: 376px;
+  width: 100%;
   position: absolute;
+  
   top: 0;
   left: 0;
   z-index: -1;
@@ -467,7 +476,7 @@ nav.scrolled {
   height: auto;
   padding-top: 30px;
   position: absolute;
-  left: 20%;
+  /* left: 20%; */
   z-index: -1;
   top: 0;
 }
@@ -535,4 +544,9 @@ nav.scrolled {
   font-size: 1.2rem;
   color: var(--darker-grey);
   padding: 0 1.2rem;
+}
+
+/* FOOTER SECTION */
+footer{
+  
 }
