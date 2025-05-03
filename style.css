@@ -12,7 +12,7 @@
 /* GLOBAL STYLES */
 * {
   box-sizing: border-box;
-  width: 100%;
+  /* width: 100%; */
   margin: 0;
   padding: 0; 
   /* outline: 1px solid red; */
@@ -26,6 +26,7 @@ html{
 body {
   font-family: "Roboto", sans-serif;
   color: var(--grey400);
+  
 }
 
 section {
@@ -82,8 +83,12 @@ nav.scrolled {
   color: #fff;
 }
 
+nav.scrolled .logo p {
+  color: #fff;
+}
 
-.logo{
+
+.mobile-nav .logo{
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -445,6 +450,8 @@ nav.scrolled {
   font-size: 3.2rem;
   color: white;
   font-weight: 500;
+  z-index: 1;
+  transform: translateY(350px);
 }
 
 .soaps-right{
@@ -454,10 +461,10 @@ nav.scrolled {
 .soaps{
   max-width: 376px;
   width: 100%;
-  position: absolute;
+  /* position: absolute;
   
   top: 0;
-  left: 0;
+  left: 0; */
   z-index: -1;
 }
 
@@ -489,6 +496,10 @@ nav.scrolled {
 .trends-left h1{
   font-size: 3.6rem;
   padding-bottom: 3.2rem;
+}
+
+.trends-right img{
+  width: 100%;
 }
 
 /* BLOG SECTION */
@@ -543,10 +554,45 @@ nav.scrolled {
 .blog-post-description{
   font-size: 1.2rem;
   color: var(--darker-grey);
-  padding: 0 1.2rem;
+  padding: 0 1.2rem 2.1rem;
 }
 
 /* FOOTER SECTION */
 footer{
+  background-color: var(--grey);
+  font-size: 12px;
+  width: 100%;
   
+}
+
+footer .logo{
+  padding: 2.6rem 0 5.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer h3{
+  color: var(--green);
+}
+
+.footer-links-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: var(--grey400);
+  cursor: pointer;
+}
+
+.copyright{
+  padding: 5.5rem 0 3.8rem;
+  color: var(--grey500);
+  text-align: center;
 }
