@@ -87,7 +87,6 @@ nav.scrolled .logo p {
   color: #fff;
 }
 
-
 .mobile-nav .logo{
   display: flex;
   align-items: center;
@@ -120,6 +119,7 @@ nav.scrolled .logo p {
   width: 100%;
   top: 0;
   left: 100%;
+  /* left: 0; */
   background: var(--green);
   display: flex;
   align-items: center;
@@ -136,17 +136,22 @@ nav.scrolled .logo p {
   pointer-events: auto;
 }
 
+.mobile-nav-menu-container.active .sub-menu {
+  pointer-events: auto;
+  opacity: 1;
+}
+
 .right-menu {
   display: none;
 }
 
 .sub-menu {
   position: fixed;
-  top: 32px;
+  top: 25px;
   left: 100px;
   pointer-events: none;
-  display: none;
-  opacity: 1;
+  /* display: none; */
+  opacity: 0;
   transition: all 400ms ease;
 }
 
@@ -164,10 +169,10 @@ nav.scrolled .logo p {
 .close-icon {
   position: fixed;
   pointer-events: none;
-  opacity: 1;
+  opacity: 0;
   transition: all 400ms ease;
   top: 32px;
-  right: 100px;
+  right: 25px;
 }
 
 .close-icon svg {
@@ -444,6 +449,11 @@ nav.scrolled .logo p {
   position: relative;
   text-align: center;
   height: 60vh;
+  margin: 0;
+}
+
+.soaps-left{
+  /* transform: translateY(320px); */
 }
 
 .soaps-left h1{
@@ -451,20 +461,20 @@ nav.scrolled .logo p {
   color: white;
   font-weight: 500;
   z-index: 1;
-  transform: translateY(350px);
+  padding-bottom: 3.8rem;
 }
 
-.soaps-right{
- 
+.soaps-left .btn{
+  background-color: #fff;
+  color: var(--grey800);
 }
 
 .soaps{
   max-width: 376px;
   width: 100%;
-  /* position: absolute;
-  
+  position: absolute;
   top: 0;
-  left: 0; */
+  left: 0;
   z-index: -1;
 }
 
@@ -481,7 +491,7 @@ nav.scrolled .logo p {
 .trends-flower{
   width: 260px;
   height: auto;
-  padding-top: 30px;
+  padding-top: 6rem;
   position: absolute;
   /* left: 20%; */
   z-index: -1;

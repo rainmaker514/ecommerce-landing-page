@@ -5,6 +5,13 @@ const rightMenu = document.querySelectorAll(".right-menu svg path:first-child");
 const menuIcon = document.querySelector(
   ".mobile-nav-menu-icon svg path:first-child"
 );
+const mobileNav = document.querySelector(".mobile-nav-menu-icon");
+const menuContainer = document.querySelector(".mobile-nav-menu-container");
+const menuClose = document.querySelector(".close-icon");
+const mobileMenuLinks = document.querySelectorAll(".mobile-nav-link");
+// const bagIcon = document.querySelector(".bag-icon");
+// const searchIcon = document.querySelector(".search-icon");
+const subMenuIcons = document.querySelectorAll(".sub-menu > svg");
 
 // NAV SCROLL EFFECT
 window.addEventListener("scroll", () => {
@@ -31,4 +38,25 @@ window.addEventListener("scroll", () => {
     });
     mobileNav.classList.remove("scrolled");
   }
+});
+
+// MOBILE NAVIGATION
+mobileNav.addEventListener("click", function () {
+  menuContainer.classList.toggle("active");
+});
+
+menuClose.addEventListener("click", function () {
+  menuContainer.classList.toggle("active");
+});
+
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    menuContainer.classList.toggle("active");
+  });
+});
+
+subMenuIcons.forEach((icon) => {
+  icon.addEventListener("click", function () {
+    menuContainer.classList.toggle("active");
+  });
 });
