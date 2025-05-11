@@ -230,8 +230,9 @@ nav.scrolled .logo p {
   font-size: 1.2rem;
 }
 
-.right-menu{
-  gap: 2rem;
+.right-menu {
+  display: flex;
+  gap: 1rem;
 }
 
 /* HERO SECTION */
@@ -257,7 +258,7 @@ nav.scrolled .logo p {
   flex-direction: column;
 }
 
-.hero-right .hero-bottles {
+.hero-bottles {
   position: absolute;
 
   width: 140px;
@@ -265,7 +266,7 @@ nav.scrolled .logo p {
   z-index: 0;
 }
 
-.hero-right .hero-blob {
+.hero-blob {
   z-index: -1;
   width: 226.53px;
   height: auto;
@@ -640,5 +641,56 @@ footer h3 {
 @media (min-width: 768px) {
   .mobile-nav {
     display: none;
+  }
+
+  .hero-section {
+    flex-direction: row;
+    padding: 25rem 0 0 8vw;
+    height: 60vh;
+
+    /* transform: translateY(19rem); */
+  }
+
+  .hero-left h1 {
+    font-size: 9.6rem;
+  }
+
+  .hero-left p {
+    font-size: 1.4rem;
+  }
+
+  .hero-right {
+    /* position: relative; */
+    overflow: hidden;
+    /* width: 100vw; */
+    height: 100vh;
+  }
+
+  .hero-bottles {
+    /* position: absolute; */
+    width: 290px;
+    height: auto;
+  }
+
+  .hero-blob {
+    width: 500px;
+    transform: translate(13rem, -8rem);
+
+    height: auto;
+  }
+
+  .about-section{
+    padding-top: 11.3rem;
+  }
+
+  .about-card{
+    width: 274px;
+    height: 274px;
+    margin-bottom: 4.6rem;
+  }
+
+  .about-card svg {
+    width: 11rem;
+    height: 11.6rem;
   }
 }
