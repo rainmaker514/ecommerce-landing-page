@@ -731,15 +731,59 @@ footer h3 {
     z-index: -1;
   }
 
-  .explore-incense{
+  .explore-incense {
     width: 402px !important;
     height: 356px !important;
     transform: translate(150px, -20px);
   }
 
-  .explore-left{
+  .explore-left {
     /* transform: translateX(-10rem); */
     position: relative;
     /* overflow: hidden; */
+  }
+
+  .bestsellers-section {
+    padding-top: 10rem;
+    /* position: relative; */
+  }
+
+  .bestsellers-flower{
+    width: 431px;
+    height: 614px;
+    position: absolute;
+    left: -100px;
+    top: 100px;
+    z-index: -1;
+  }
+
+  .bestsellers-right{
+    padding-top: 40rem;
+  }
+
+  .bestsellers-left{
+    padding-top: 17rem;
+  }
+
+  .product-card{
+    width: 390px;
+  }
+
+  .product-card img{
+    width: 100%;
+    height: auto;
+  }
+
+  .product-card-info{
+    height: 91px;
+    top: -90px;
+  }
+
+  .product-card-title h4{
+    font-size: 2rem;
+  }
+
+  .product-card-description p{
+    font-size: 1.4rem;
   }
 }
