@@ -78,12 +78,16 @@ nav.scrolled {
   box-shadow: 0 8px 14px 8px rgba(0, 0, 0, 0.3);
   border-radius: 0 0 15px 15px;
   top: 0;
-  color: #fff;
+  /* color: #fff; */
 }
 
 nav.scrolled .logo p {
   color: #fff;
 }
+
+.desktop-nav.scrolled{
+  padding-bottom: 2rem;
+} 
 
 .mobile-nav .logo {
   display: flex;
@@ -201,8 +205,9 @@ nav.scrolled .logo p {
 
 /* DESKTOP NAV SECTION */
 .desktop-nav {
-  display: flex;
+  display: none;
   justify-content: space-between;
+  z-index: 1;
   position: fixed;
   width: 100%;
   padding: 3rem 4rem 0;
@@ -641,6 +646,10 @@ footer h3 {
 @media (min-width: 768px) {
   .mobile-nav {
     display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
   }
 
   .hero-section {
