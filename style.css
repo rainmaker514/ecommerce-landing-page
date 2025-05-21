@@ -85,9 +85,9 @@ nav.scrolled .logo p {
   color: #fff;
 }
 
-.desktop-nav.scrolled{
+.desktop-nav.scrolled {
   padding-bottom: 2rem;
-} 
+}
 
 .mobile-nav .logo {
   display: flex;
@@ -688,11 +688,11 @@ footer h3 {
     height: auto;
   }
 
-  .about-section{
+  .about-section {
     padding-top: 11.3rem;
   }
 
-  .about-card{
+  .about-card {
     width: 274px;
     height: 274px;
     margin-bottom: 4.6rem;
@@ -701,5 +701,45 @@ footer h3 {
   .about-card svg {
     width: 11rem;
     height: 11.6rem;
+  }
+
+  .explore-section {
+    flex-direction: row;
+  }
+
+  .explore-right {
+    /* margin-right: 0; */
+    text-align: right;
+    padding-left: 0;
+  }
+
+  .explore-right h1 {
+    font-size: 4rem;
+  }
+
+  .explore-right p {
+    font-size: 1.4rem;
+    width: 374px;
+    transform: translateX(330px);
+  }
+
+  .explore-blob {
+    width: 314px !important;
+    height: 493px !important;
+    position: absolute;
+    left: -120px;
+    z-index: -1;
+  }
+
+  .explore-incense{
+    width: 402px !important;
+    height: 356px !important;
+    transform: translate(150px, -20px);
+  }
+
+  .explore-left{
+    /* transform: translateX(-10rem); */
+    position: relative;
+    /* overflow: hidden; */
   }
 }
