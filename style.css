@@ -377,7 +377,7 @@ nav.scrolled .logo p {
 
 .explore-right {
   text-align: center;
-  padding-inline: 8vw;
+  padding: 0 2rem;
 }
 
 .explore-right h1 {
@@ -490,6 +490,7 @@ nav.scrolled .logo p {
 
 .soaps-left {
   position: absolute;
+  
 }
 
 .soaps-left h1 {
@@ -498,7 +499,9 @@ nav.scrolled .logo p {
   font-weight: 500;
   z-index: 1;
   padding: 3.8rem;
-  width: 80%;
+  max-width: 454px;
+  /* width: 80%; */
+  
 }
 
 .soaps-left .btn {
@@ -510,7 +513,7 @@ nav.scrolled .logo p {
   max-width: 376px;
   width: 100%;
   height: auto;
-  position: relative;
+  /* position: relative; */
   z-index: -1;
 }
 
@@ -785,5 +788,51 @@ footer h3 {
 
   .product-card-description p{
     font-size: 1.4rem;
+  }
+
+  .soaps-section{
+    flex-direction: row;
+    
+  }
+
+  .soaps-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: unset;
+  }
+
+  .soaps-left img{
+    width: 540px;
+    height: 523px;
+    max-height: 100%;
+  }
+
+  .soaps-left h1 {
+    position: absolute;
+    text-align: left;
+    top: 20%;
+    z-index: 0;
+    padding: 0;
+    font-size: 3.8rem;
+  }
+
+  .soaps-left .btn{
+    position: absolute;
+    /* text-align: left; */
+    top: 65%;
+    left: 5%;
+    width: 186px;
+    /* align-self: flex-start; */
+  }
+
+  .soaps-right{
+    height: 514px;
+  }
+
+  .soaps {
+    height: 100%;
+    object-fit: cover;
   }
 }
