@@ -371,8 +371,8 @@ nav.scrolled .logo p {
   position: absolute;
 }
 
-.explore-left .explore-blob {
-  width: 190px;
+.explore-left .explore-blob-tablet {
+  display: none;
 }
 
 .explore-right {
@@ -490,7 +490,6 @@ nav.scrolled .logo p {
 
 .soaps-left {
   position: absolute;
-  
 }
 
 .soaps-left h1 {
@@ -501,7 +500,6 @@ nav.scrolled .logo p {
   padding: 3.8rem;
   max-width: 454px;
   /* width: 80%; */
-  
 }
 
 .soaps-left .btn {
@@ -515,6 +513,10 @@ nav.scrolled .logo p {
   height: auto;
   /* position: relative; */
   z-index: -1;
+}
+
+.soaps-left img {
+  display: none;
 }
 
 /* TRENDS SECTION */
@@ -726,7 +728,8 @@ footer h3 {
     transform: translateX(330px);
   }
 
-  .explore-blob {
+  .explore-left .explore-blob-tablet {
+    display: unset;
     width: 314px !important;
     height: 493px !important;
     position: absolute;
@@ -734,10 +737,14 @@ footer h3 {
     z-index: -1;
   }
 
+  .explore-left .explore-blob-mobile {
+    display: none;
+  }
+
   .explore-incense {
     width: 402px !important;
     height: 356px !important;
-    transform: translate(150px, -20px);
+    transform: translate(200px, -20px);
   }
 
   .explore-left {
@@ -751,7 +758,7 @@ footer h3 {
     /* position: relative; */
   }
 
-  .bestsellers-flower{
+  .bestsellers-flower {
     width: 431px;
     height: 614px;
     position: absolute;
@@ -760,39 +767,38 @@ footer h3 {
     z-index: -1;
   }
 
-  .bestsellers-right{
+  .bestsellers-right {
     padding-top: 40rem;
   }
 
-  .bestsellers-left{
+  .bestsellers-left {
     padding-top: 17rem;
   }
 
-  .product-card{
+  .product-card {
     width: 390px;
   }
 
-  .product-card img{
+  .product-card img {
     width: 100%;
     height: auto;
   }
 
-  .product-card-info{
+  .product-card-info {
     height: 91px;
     top: -90px;
   }
 
-  .product-card-title h4{
+  .product-card-title h4 {
     font-size: 2rem;
   }
 
-  .product-card-description p{
+  .product-card-description p {
     font-size: 1.4rem;
   }
 
-  .soaps-section{
+  .soaps-section {
     flex-direction: row;
-    
   }
 
   .soaps-left {
@@ -803,10 +809,11 @@ footer h3 {
     position: unset;
   }
 
-  .soaps-left img{
+  .soaps-left img {
     width: 540px;
     height: 523px;
     max-height: 100%;
+    display: unset;
   }
 
   .soaps-left h1 {
@@ -818,16 +825,16 @@ footer h3 {
     font-size: 3.8rem;
   }
 
-  .soaps-left .btn{
+  .soaps-left .btn {
     position: absolute;
     /* text-align: left; */
     top: 65%;
-    left: 5%;
+    transform: translateX(-75%);
     width: 186px;
     /* align-self: flex-start; */
   }
 
-  .soaps-right{
+  .soaps-right {
     height: 514px;
   }
 
