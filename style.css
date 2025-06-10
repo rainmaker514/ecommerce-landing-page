@@ -596,10 +596,10 @@ nav.scrolled .logo p {
 }
 
 .divider {
-  width: 100%;
+  width: 180px;
   height: 1px;
   background-color: var(--grey);
-  margin: 0.5rem 0;
+  margin: 0.5rem auto;
 }
 
 .blog-post-description {
@@ -841,5 +841,32 @@ footer h3 {
   .soaps {
     height: 100%;
     object-fit: cover;
+  }
+
+  .blog-post{
+    width: 372px;
+    height: 667px;
+  }
+
+  .blog-post-title{
+    font-size: 2.4rem;
+    padding: 3.7rem 2.3rem 1.9rem ;
+  }
+
+  .blog-post-description{
+    font-size: 1.6rem;
+    padding-top: 3.2rem;
+  }
+
+  .blog-post img{
+    width: 371px;
+    height: 344px;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 0;
+  }
+
+  .divider{
+    width: 325px;
   }
 }
