@@ -635,6 +635,10 @@ footer h3 {
   text-align: center;
 }
 
+.footer-links{
+  list-style: none;
+}
+
 .footer-links a {
   text-decoration: none;
   color: var(--grey400);
@@ -868,5 +872,27 @@ footer h3 {
 
   .divider{
     width: 325px;
+  }
+
+  footer .logo{
+    position: absolute;
+    padding-left: 8.7rem;
+  }
+
+  footer .wrapper{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+  }
+
+  .footer-links-container{
+    padding-top: 3.4rem;
+    
+  
+  }
+  
+  .copyright{
+    /* position: absolute; */
   }
 }
