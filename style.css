@@ -635,7 +635,7 @@ footer h3 {
   text-align: center;
 }
 
-.footer-links{
+.footer-links {
   list-style: none;
 }
 
@@ -847,22 +847,22 @@ footer h3 {
     object-fit: cover;
   }
 
-  .blog-post{
+  .blog-post {
     width: 372px;
     height: 667px;
   }
 
-  .blog-post-title{
+  .blog-post-title {
     font-size: 2.4rem;
-    padding: 3.7rem 2.3rem 1.9rem ;
+    padding: 3.7rem 2.3rem 1.9rem;
   }
 
-  .blog-post-description{
+  .blog-post-description {
     font-size: 1.6rem;
     padding-top: 3.2rem;
   }
 
-  .blog-post img{
+  .blog-post img {
     width: 371px;
     height: 344px;
     object-fit: cover;
@@ -870,29 +870,62 @@ footer h3 {
     padding: 0;
   }
 
-  .divider{
+  .divider {
     width: 325px;
   }
 
-  footer .logo{
+  footer .logo {
     position: absolute;
     padding-left: 8.7rem;
   }
 
-  footer .wrapper{
+  footer .wrapper {
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    
   }
 
-  .footer-links-container{
+  .footer-links-container {
     padding-top: 3.4rem;
-    
-  
   }
-  
-  .copyright{
+
+  .copyright {
     /* position: absolute; */
+  }
+}
+
+@media (min-width: 805px) {
+  .explore-right h1 {
+    max-width: 700px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .explore-right {
+    align-items: right;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop-nav{
+    background: #FFF;
+  }
+  .hero-bottles {
+    width: 540px;
+    height: auto;
+  }
+
+  .hero-blob {
+    width: 850px;
+    height: auto;
+    transform: translate(20rem, -8rem);
+  }
+
+  .hero-section {
+  }
+
+  .hero-left h1 {
+    text-align: left;
   }
 }
