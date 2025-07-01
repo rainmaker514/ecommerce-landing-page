@@ -908,8 +908,8 @@ footer h3 {
 }
 
 @media screen and (min-width: 1024px) {
-  .desktop-nav{
-    background: #FFF;
+  .desktop-nav {
+    background: #fff;
   }
   .hero-bottles {
     width: 540px;
@@ -927,43 +927,41 @@ footer h3 {
   }
 }
 
-@media screen and (min-width: 1440px){
-  .hero-bottles{
+@media screen and (min-width: 1440px) {
+  .hero-bottles {
     width: 750px;
     height: auto;
   }
 
-  .hero-blob{
+  .hero-blob {
     width: 1700px;
     height: auto;
     transform: translate(30rem, -20rem);
   }
 
-  .about-card-container{
+  .about-card-container {
     flex-direction: row;
     /* flex-wrap: wrap; */
     /* justify-content: center; */
   }
-  
-  .bestsellers-left{
+
+  .bestsellers-left {
     position: static;
   }
 
-  .bestsellers-left h1{
+  .bestsellers-left h1 {
     font-size: 5rem;
-    
   }
 
-  .bestsellers-right{
+  .bestsellers-right {
     padding: 0;
   }
 
-
-  .bestsellers-section{
+  .bestsellers-section {
     display: flex;
     flex-direction: row;
     gap: 20rem;
-    justify-content: center;   /* Optional: adjust as needed */
+    justify-content: center; /* Optional: adjust as needed */
     align-items: flex-start;
   }
 
@@ -973,7 +971,7 @@ footer h3 {
     justify-content: center;
   }
 
-  .slider{
+  .slider {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -981,7 +979,7 @@ footer h3 {
     bottom: 60px;
   }
 
-  .dot{
+  .dot {
     width: 8px;
     height: 8px;
     background-color: var(--grey400);
@@ -991,7 +989,25 @@ footer h3 {
     transition: background-color 0.3s ease;
   }
 
-  .dot:first-child{
+  .dot:first-child {
     background-color: var(--green);
+  }
+
+  .trends-section {
+    flex-direction: row;
+    gap: 25rem;
+  }
+
+  .trends-flower {
+    left: 0;
+  }
+
+  .trends-left {
+    text-align: left;
+  }
+
+  .trends-right .slider{
+    position: absolute;
+    right: 400px;
   }
 }
