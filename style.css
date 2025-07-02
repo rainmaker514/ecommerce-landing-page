@@ -995,7 +995,7 @@ footer h3 {
 
   .trends-section {
     flex-direction: row;
-    gap: 25rem;
+    gap: 15rem;
   }
 
   .trends-flower {
@@ -1009,5 +1009,27 @@ footer h3 {
   .trends-right .slider{
     position: absolute;
     right: 400px;
+  }
+
+  .blog-post-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+
+  .blog-post{
+    width: 371px;
+    height: 395px;
+  }
+
+  .blog-post img{
+    object-fit: fill;
+    width: 371px;
+    height: 203px;
+  }
+
+  .blog-post-description{
+    padding-top: 0;
   }
 }
