@@ -1006,30 +1006,42 @@ footer h3 {
     text-align: left;
   }
 
-  .trends-right .slider{
+  .trends-right .slider {
     position: absolute;
     right: 400px;
   }
 
-  .blog-post-container{
+  .blog-post-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2.4rem;
   }
 
-  .blog-post{
+  .blog-post {
     width: 371px;
     height: 395px;
   }
 
-  .blog-post img{
+  .blog-post img {
     object-fit: fill;
     width: 371px;
     height: 203px;
   }
 
-  .blog-post-description{
+  .blog-post-description {
     padding-top: 0;
+  }
+
+  .footer-links-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-links-container h3{
+    grid-row: 1;
   }
 }
