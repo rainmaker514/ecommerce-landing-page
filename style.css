@@ -7,6 +7,7 @@
   --grey50: #f9fafb;
   --darker-grey: #4b5563;
   --grey800: #1f2937;
+  --grey700: #374151;
 }
 
 /* GLOBAL STYLES */
@@ -26,6 +27,28 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   color: var(--grey400);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode{
+  background: var(--grey800);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode p{
+  color: var(--grey500);
+}
+
+body.dark-mode .logo p, body.dark-mode .dark-mode-toggle {
+  color: var(--grey400);
+}
+
+/* body.dark-mode .dark-mode-toggle{
+  color: var(--grey400);
+} */
+
+body.dark-mode footer{
+  background: var(--grey700);
 }
 
 section {
@@ -109,6 +132,11 @@ nav.scrolled .logo p {
 .mobile-nav-menu-icon {
   width: 26px;
   margin-right: 2rem;
+  display: flex;
+}
+
+body.dark-mode .mobile-nav-menu-icon svg path {
+  fill: #fff;
 }
 
 .mobile-nav p {
@@ -168,10 +196,11 @@ nav.scrolled .logo p {
 .dark-mode-toggle {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  width: 100%;
   gap: 0.5rem;
-  color: #fff;
-  /* padding-right: 3.6rem; */
+  color: var(--grey800);
+  padding-right: 2rem;
   font-size: 1.2rem;
   user-select: none;
 }
@@ -181,8 +210,8 @@ nav.scrolled .logo p {
 }
 
 .dark-mode-toggle .dark-mode-slider {
-  width: 50px;
-  height: 24px;
+  width: 34px;
+  height: 16px;
   background-color: var(--grey800);
   border-radius: 50px;
   position: relative;
@@ -196,8 +225,8 @@ nav.scrolled .logo p {
   position: absolute;
   top: 2px;
   left: 2px;
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   background-color: #fff;
   border-radius: 50%;
   transition: transform 0.3s ease;
@@ -208,8 +237,10 @@ nav.scrolled .logo p {
 }
 
 .dark-mode-toggle input:checked + .dark-mode-slider::before {
-  transform: translateX(26px);
+  transform: translateX(18px);
 }
+
+
 
 .close-icon {
   position: fixed;

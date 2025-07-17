@@ -5,12 +5,12 @@ const rightMenu = document.querySelectorAll(".right-menu svg path:first-child");
 const menuIcon = document.querySelector(
   ".mobile-nav-menu-icon svg path:first-child"
 );
+const toggleLabel = document.querySelector(".toggle-label");
 const mobileNav = document.querySelector(".mobile-nav-menu-icon");
 const menuContainer = document.querySelector(".mobile-nav-menu-container");
 const menuClose = document.querySelector(".close-icon");
 const mobileMenuLinks = document.querySelectorAll(".mobile-nav-link");
-// const bagIcon = document.querySelector(".bag-icon");
-// const searchIcon = document.querySelector(".search-icon");
+const darkModeSlider = document.querySelector(".dark-mode-slider");
 const subMenuIcons = document.querySelectorAll(".sub-menu > svg");
 const desktopNav = document.querySelector(".desktop-nav");
 const desktopNavLink = document.querySelectorAll(".desktop-nav-link");
@@ -77,4 +77,14 @@ subMenuIcons.forEach((icon) => {
   icon.addEventListener("click", function () {
     menuContainer.classList.toggle("active");
   });
+});
+
+// DARK MODE TOGGLE
+darkModeSlider.addEventListener("click", function() {
+  document.body.classList.toggle("dark-mode");
+  if(darkModeSlider.checked){
+    toggleLabel.textContent = "Dark Mode";
+  }else{
+    toggleLabel.textContent = "Light Mode";
+  }
 });
