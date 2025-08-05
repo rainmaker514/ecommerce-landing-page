@@ -30,24 +30,29 @@ body {
   transition: all 0.3s ease;
 }
 
-body.dark-mode{
+body.dark-mode {
   background: var(--grey800);
   transition: all 0.3s ease;
 }
 
-body.dark-mode p{
+body.dark-mode p {
   color: var(--grey500);
 }
 
-body.dark-mode .logo p, body.dark-mode .dark-mode-toggle {
+body.dark-mode .logo p,
+body.dark-mode .dark-mode-toggle {
   color: var(--grey400);
+}
+
+.bodydark-mode .mobile-nav-menu-icon svg path {
+  fill: var(--grey400);
 }
 
 /* body.dark-mode .dark-mode-toggle{
   color: var(--grey400);
 } */
 
-body.dark-mode footer{
+body.dark-mode footer {
   background: var(--grey700);
 }
 
@@ -216,8 +221,6 @@ body.dark-mode .mobile-nav-menu-icon svg path {
   border-radius: 50px;
   position: relative;
   transition: background-color 0.3s ease;
-  
-  
 }
 
 .dark-mode-toggle .dark-mode-slider::before {
@@ -239,8 +242,6 @@ body.dark-mode .mobile-nav-menu-icon svg path {
 .dark-mode-toggle input:checked + .dark-mode-slider::before {
   transform: translateX(18px);
 }
-
-
 
 .close-icon {
   position: fixed;
@@ -280,8 +281,6 @@ body.dark-mode .mobile-nav-menu-icon svg path {
   color: #fff;
   font-size: 36px;
 }
-
-
 
 /* DESKTOP NAV SECTION */
 .desktop-nav {
@@ -404,6 +403,19 @@ body.dark-mode .mobile-nav-menu-icon svg path {
   align-items: center;
 }
 
+body.dark-mode .about-card {
+  background-color: var(--grey700);
+  color: var(--green);
+}
+
+body.dark-mode .about-card svg path:nth-child(n + 2) {
+  fill: var(--grey);
+}
+
+body.dark-mode .about-card:hover svg path:nth-child(n + 2) {
+  fill: #424B25;
+}
+
 .about-card h4 {
   font-size: 1.4rem;
   padding-top: 0.8rem;
@@ -412,6 +424,11 @@ body.dark-mode .mobile-nav-menu-icon svg path {
 .about-card:hover {
   background-color: var(--green);
   color: #fff;
+}
+
+body.dark-mode .about-card:hover {
+  background-color: var(--green);
+  color: var(--grey);
 }
 
 .about-card svg path:first-child {
@@ -1121,7 +1138,7 @@ footer h3 {
     margin-right: auto;
   }
 
-  .footer-links-container h3{
+  .footer-links-container h3 {
     grid-row: 1;
   }
 }
