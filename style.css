@@ -699,6 +699,14 @@ body.dark-mode .soaps-left .btn{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+body.dark-mode .blog-post{
+  background-color: var(--grey700);
+}
+
+body.dark-mode .blog-post-description{
+  color: var(--grey);
+}
+
 .blog-post img {
   width: 100%;
   padding-bottom: 2rem;
