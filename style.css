@@ -555,6 +555,10 @@ body.dark-mode .about-card:hover {
   align-items: center;
 }
 
+body.dark-mode .product-card-title p{
+  color: #fff;
+}
+
 .product-card h4 {
   font-size: 1.5rem;
   color: var(--grey800);
@@ -658,6 +662,10 @@ body.dark-mode .soaps-left .btn{
 
 .trends-right img {
   width: 100%;
+}
+
+.trends-right .product-card-info{
+  width: 290px;
 }
 
 /* BLOG SECTION */
